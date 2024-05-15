@@ -9,7 +9,7 @@
 }
 .subtitle {
   color: #d0d6f9;
-  letter-spacing: 0.17rem;
+  letter-spacing: 0.25rem;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   background: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.06em;
   text-align: center;

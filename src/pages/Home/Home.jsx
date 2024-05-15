@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './home.module.css'
-import Header from './Header'
+import Header from '../../components/Header'
 import Main from './Main'
 
 export default function Home() {
