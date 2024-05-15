@@ -1,0 +1,8 @@
+.container {
+  background: url('../../../assets/home/background-home-mobile.jpg');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
