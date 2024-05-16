@@ -1,0 +1,107 @@
+main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+.planet_number {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  color: #fff;
+  opacity: 0.25;
+  margin-right: 1.8rem;
+}
+.img_container {
+  max-width: 32rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.6rem;
+}
+.moon_img {
+  width: 170px;
+}
+
+/* Компонент Навигации ================================================== */
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  max-width: 23.7rem;
+  height: 2.8rem;
+}
+.nav_bar > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.17em;
+  color: #d0d6f9;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.nav_bar > .nav_active {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.17em;
+  margin-bottom: 20px;
+}
+/* Компонент Навигации ================================================== */
+.title {
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  text-align: center;
+  color: #fff;
+}
+.descritpion {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #d0d6f9;
+  font-family: 'Barlow', sans-serif;
+  max-width: 32rem;
+  margin-bottom: 3.2rem;
+}
+.line_decoration {
+  background: #383b4b;
+  width: 32.7rem;
+  height: 1px;
+  margin-bottom: 3.2rem;
+}
+.avg_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 21.6rem;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d0d6f9;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.span_decoration {
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
