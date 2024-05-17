@@ -3,7 +3,7 @@ import style from './header.module.css'
 export default function Header() {
   const [active, setActive] = useState(false)
   const activeMenuFn = () => {
-    setActive(true)
+    setActive(!active)
   }
   const activeMenu = active ? { display: 'block' } : { display: 'none' }
   return (
@@ -39,7 +39,39 @@ export default function Header() {
         </svg>
       </header>
       <div className={`${style.menu_border_decoration}`} style={activeMenu}>
-        <div className={style.menu_block}></div>
+        <div className={style.menu_block}>
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={activeMenuFn}
+          >
+            <rect
+              x="2.5752"
+              y="0.954102"
+              width="24"
+              height="3"
+              transform="rotate(45 2.5752 0.954102)"
+              fill="#D0D6F9"
+            />
+            <rect
+              x="0.454102"
+              y="17.9246"
+              width="24"
+              height="3"
+              transform="rotate(-45 0.454102 17.9246)"
+              fill="#D0D6F9"
+            />
+          </svg>
+          <div className={style.nav_bar_burger}>
+            <a href="#">00 HOME</a>
+            <a href="#">01 DESTINATION</a>
+            <a href="#">02 CREW</a>
+            <a href="#">03 TECHNOLOGY</a>
+          </div>
+        </div>
       </div>
     </section>
   )

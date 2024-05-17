@@ -1,0 +1,76 @@
+.main_crew_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem;
+  width: 100%;
+}
+
+.subtitle {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+.span_decor {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  color: #fff;
+  opacity: 0.25;
+}
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 32.7rem;
+  width: 100%;
+  border-bottom: 1px solid #383b4b;
+  margin-bottom: 3.2rem;
+}
+img {
+  max-width: 17.7rem;
+}
+nav {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+.blog_info_wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.rank_team {
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.name_team {
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+.about_team {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #d0d6f9;
+}
