@@ -1,0 +1,9 @@
+.container {
+  background: url('./background-technology-mobile.jpg');
+  height: 66.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  height: 71rem;
+}

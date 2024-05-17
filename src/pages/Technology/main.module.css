@@ -1,6 +1,6 @@
-.container {
-  background: url('./background-crew-mobile.jpg');
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }

@@ -46,6 +46,7 @@ nav {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-bottom: 7.4rem;
 }
 .rank_team {
   font-family: 'Bellefair', sans-serif;
