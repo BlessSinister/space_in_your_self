@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './main.module.css'
+import img from './image-launch-vehicle-landscape.jpg'
+
 export default function Main() {
   return (
     <main>
@@ -8,16 +10,16 @@ export default function Main() {
         SPACE LAUNCH 101
       </p>
       <div className={style.img_wrapper}>
-        <img src="" alt="" />
+        <img src={img} alt="" />
       </div>
-      <nav>
-        <a href="" className={`${style.nav_link} ${style.active_link}`}>
+      <nav className={style.nav_wrapper}>
+        <a href="#" className={`${style.nav_link} ${style.active_link}`}>
           1
         </a>
-        <a href="" className={style.nav_link}>
+        <a href="#" className={style.nav_link}>
           2
         </a>
-        <a href="" className={style.nav_link}>
+        <a href="#" className={style.nav_link}>
           3
         </a>
       </nav>
