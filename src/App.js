@@ -6,10 +6,10 @@ import Technology from './pages/Technology/Technology'
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
-      {/* <Destination /> */}
-      {/* <Crew /> */}
-      <Technology />
+      <Home />
+      {/* <Destination />
+      <Crew />
+      <Technology /> */}
     </div>
   )
 }

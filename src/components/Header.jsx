@@ -66,10 +66,18 @@ export default function Header() {
             />
           </svg>
           <div className={style.nav_bar_burger}>
-            <a href="#">00 HOME</a>
-            <a href="#">01 DESTINATION</a>
-            <a href="#">02 CREW</a>
-            <a href="#">03 TECHNOLOGY</a>
+            <a href="#" className={style.nav_bar_link}>
+              <span className={style.nav_span}>00</span> HOME
+            </a>
+            <a href="#" className={style.nav_bar_link}>
+              <span className={style.nav_span}>01</span> DESTINATION
+            </a>
+            <a href="#" className={style.nav_bar_link}>
+              <span className={style.nav_span}>02</span> CREW
+            </a>
+            <a href="#" className={style.nav_bar_link}>
+              <span className={style.nav_span}>03</span> TECHNOLOGY
+            </a>
           </div>
         </div>
       </div>

@@ -54,9 +54,21 @@ section {
   flex-direction: column;
   gap: 3.2rem;
 }
-.nav_bar_burger > a {
+.nav_bar_link {
   display: inline-block;
   color: white;
   font-size: 15px;
   text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  color: #fff;
+}
+.nav_span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.17em;
+  color: #fff;
 }

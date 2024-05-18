@@ -1,6 +1,6 @@
 .container {
   background: url('../../../assets/home/background-home-mobile.jpg');
-  height: 66.7rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
