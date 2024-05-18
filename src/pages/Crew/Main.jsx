@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './main.module.css'
 import img_dug from './image-douglas-hurley.webp'
-export default function Main() {
+export default function Main({ data }) {
   return (
     <main className={style.main_crew_wrapper}>
       <p className={style.subtitle}>

@@ -1,7 +1,11 @@
 import React from 'react'
 import style from './main.module.css'
 import img from './image-moon.webp'
-export default function Main() {
+export default function Main({ data }) {
+  if (data == undefined) {
+    return
+  }
+  console.log(data[0])
   return (
     <main>
       <h2 className={style.subtitle}>
@@ -13,25 +17,22 @@ export default function Main() {
       </div>
       <nav className={style.nav_bar}>
         <a href="#" className={style.nav_active}>
-          MOON
+          {data[0].name}
         </a>
         <a href="#">MARS</a>
         <a href="#">EUROPA</a>
         <a href="#">TITAN</a>
       </nav>
       <h1 className={style.title}>MOON</h1>
-      <p className={style.descritpion}>
-        See our planet as you’ve never seen it before. A perfect relaxing trip
-        away to help regain perspective and come back refreshed. While you’re
-        there, take in some history by visiting the Luna 2 and Apollo 11 landing
-        sites.
-      </p>
+      <p className={style.descritpion}>{data[0].description}</p>
       <div className={style.line_decoration}></div>
       <div className={style.avg_wrapper}>
-        AVG. DISTANCE <span className={style.span_decoration}>384,400 km</span>
+        AVG. DISTANCE{' '}
+        <span className={style.span_decoration}>{data[0].distance}</span>
       </div>
       <div className={style.avg_wrapper}>
-        Est. travel time <span className={style.span_decoration}>3 days</span>
+        Est. travel time{' '}
+        <span className={style.span_decoration}>{data[0].travel}</span>
       </div>
     </main>
   )
