@@ -1,11 +1,11 @@
 import React from 'react'
 import style from './main.module.css'
 
-export default function Main({ data }) {
+export default function Main({ data, handleClick }) {
   if (data === undefined) {
     return
   }
-  console.log(data[0])
+
   return (
     <main>
       <h2 className={style.subtitle}>
@@ -16,14 +16,25 @@ export default function Main({ data }) {
         <img src={data[0].images.png} alt="" className={style.moon_img} />
       </div>
       <nav className={style.nav_bar}>
-        <a href="#" className={style.nav_active}>
-          {data[0].name}
+        <a
+          href="#"
+          onClick={handleClick}
+          className={style.nav_active}
+          id="moon"
+        >
+          MOON
         </a>
-        <a href="#">MARS</a>
-        <a href="#">EUROPA</a>
-        <a href="#">TITAN</a>
+        <a href="#" onClick={handleClick} id="mars">
+          MARS
+        </a>
+        <a href="#" onClick={handleClick} id="europa">
+          EUROPA
+        </a>
+        <a href="#" onClick={handleClick} id="titan">
+          TITAN
+        </a>
       </nav>
-      <h1 className={style.title}>MOON</h1>
+      <h1 className={style.title}>{data[0].name.toUpperCase()}</h1>
       <p className={style.descritpion}>{data[0].description}</p>
       <div className={style.line_decoration}></div>
       <div className={style.avg_wrapper}>
