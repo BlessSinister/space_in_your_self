@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './main.module.css'
+import { Link } from 'react-router-dom'
 
 export default function Main() {
   return (
@@ -14,7 +15,9 @@ export default function Main() {
           experience!
         </p>
       </section>
-      <div className={style.explore}>Explore</div>
+      <Link to="/destination" style={{ textDecoration: 'none' }}>
+        <div className={style.explore}>Explore</div>
+      </Link>
     </>
   )
 }

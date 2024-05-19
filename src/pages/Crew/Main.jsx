@@ -13,7 +13,7 @@ export default function Main({ data }) {
         Meet your crew
       </p>
       <div className={style.img_wrapper}>
-        <img src={img_dug} alt="" />
+        <img src={data[0].images.png} alt="" />
       </div>
       <nav>
         <svg

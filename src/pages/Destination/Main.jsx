@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './main.module.css'
-import img from './image-moon.webp'
+
 export default function Main({ data }) {
-  if (data == undefined) {
+  if (data === undefined) {
     return
   }
   console.log(data[0])
@@ -13,7 +13,7 @@ export default function Main({ data }) {
         Pick your destination
       </h2>
       <div className={style.img_container}>
-        <img src={img} alt="" className={style.moon_img} />
+        <img src={data[0].images.png} alt="" className={style.moon_img} />
       </div>
       <nav className={style.nav_bar}>
         <a href="#" className={style.nav_active}>

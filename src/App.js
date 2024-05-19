@@ -6,7 +6,8 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { data } from './data'
 import { getData } from './store/dataSlice'
-
+import { Routes, Route } from 'react-router-dom'
+import Notfound from './pages/Notfound/Notfound'
 function App() {
   const dispatch = useDispatch()
   useEffect(() => {
@@ -14,10 +15,13 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {/* <Home /> */}
-      {/* <Destination /> */}
-      {/* <Crew /> */}
-      <Technology />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/destination" element={<Destination />} />
+        <Route path="*" element={<Notfound />} />
+      </Routes>
     </div>
   )
 }

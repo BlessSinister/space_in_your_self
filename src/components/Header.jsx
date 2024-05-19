@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import style from './header.module.css'
+import { Link } from 'react-router-dom'
+
 export default function Header() {
   const [active, setActive] = useState(false)
   const activeMenuFn = () => {
@@ -66,18 +68,18 @@ export default function Header() {
             />
           </svg>
           <div className={style.nav_bar_burger}>
-            <a href="#" className={style.nav_bar_link}>
+            <Link to="/" className={style.nav_bar_link}>
               <span className={style.nav_span}>00</span> HOME
-            </a>
-            <a href="#" className={style.nav_bar_link}>
+            </Link>
+            <Link to="/destination" className={style.nav_bar_link}>
               <span className={style.nav_span}>01</span> DESTINATION
-            </a>
-            <a href="#" className={style.nav_bar_link}>
+            </Link>
+            <Link to="/crew" className={style.nav_bar_link}>
               <span className={style.nav_span}>02</span> CREW
-            </a>
-            <a href="#" className={style.nav_bar_link}>
+            </Link>
+            <Link to="/technology" className={style.nav_bar_link}>
               <span className={style.nav_span}>03</span> TECHNOLOGY
-            </a>
+            </Link>
           </div>
         </div>
       </div>
