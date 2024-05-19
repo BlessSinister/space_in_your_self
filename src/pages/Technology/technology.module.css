@@ -1,5 +1,5 @@
 .container {
-  background: url('./background-technology-mobile.jpg');
+  background: url('../../../public/assets/technology/background-technology-mobile.jpg');
   height: 66.7rem;
   display: flex;
   flex-direction: column;

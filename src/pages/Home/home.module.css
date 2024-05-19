@@ -1,5 +1,5 @@
 .container {
-  background: url('../../../assets/home/background-home-mobile.jpg');
+  background: url('../../../public/assets/home/background-home-mobile.jpg');
   height: 100vh;
   display: flex;
   flex-direction: column;

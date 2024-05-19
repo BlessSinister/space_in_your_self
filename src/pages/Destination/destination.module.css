@@ -1,5 +1,5 @@
 .container {
-  background: url('../../../assets/destination/background-destination-mobile.jpg');
+  background: url('../../../public/assets/destination/background-destination-mobile.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;

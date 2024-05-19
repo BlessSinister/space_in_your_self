@@ -2,6 +2,10 @@ import React from 'react'
 import style from './main.module.css'
 import img_dug from './image-douglas-hurley.webp'
 export default function Main({ data }) {
+  console.log(data)
+  if (!data) {
+    return
+  }
   return (
     <main className={style.main_crew_wrapper}>
       <p className={style.subtitle}>
@@ -50,13 +54,9 @@ export default function Main({ data }) {
         </svg>
       </nav>
       <div className={style.blog_info_wrapper}>
-        <p className={style.rank_team}>Commander </p>
-        <h2 className={style.name_team}>Douglas Hurley</h2>
-        <p className={style.about_team}>
-          Douglas Gerald Hurley is an American engineer, former Marine Corps
-          pilot and former NASA astronaut. He launched into space for the third
-          time as commander of Crew Dragon Demo-2.
-        </p>
+        <p className={style.rank_team}>{data[0].role}</p>
+        <h2 className={style.name_team}>{data[0].name}</h2>
+        <p className={style.about_team}>{data[0].bio}</p>
       </div>
     </main>
   )
