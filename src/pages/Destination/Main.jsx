@@ -1,11 +1,11 @@
 import React from 'react'
 import style from './main.module.css'
 
-export default function Main({ data, handleClick }) {
+export default function Main({ data, handleClick, activeEl }) {
   if (data === undefined) {
     return
   }
-
+  console.log(activeEl)
   return (
     <main>
       <h2 className={style.subtitle}>
@@ -19,18 +19,33 @@ export default function Main({ data, handleClick }) {
         <a
           href="#"
           onClick={handleClick}
-          className={style.nav_active}
+          className={activeEl === 'moon' ? style.nav_active : ''}
           id="moon"
         >
           MOON
         </a>
-        <a href="#" onClick={handleClick} id="mars">
+        <a
+          href="#"
+          onClick={handleClick}
+          id="mars"
+          className={activeEl === 'mars' ? style.nav_active : ''}
+        >
           MARS
         </a>
-        <a href="#" onClick={handleClick} id="europa">
+        <a
+          href="#"
+          onClick={handleClick}
+          id="europa"
+          className={activeEl === 'europa' ? style.nav_active : ''}
+        >
           EUROPA
         </a>
-        <a href="#" onClick={handleClick} id="titan">
+        <a
+          href="#"
+          onClick={handleClick}
+          id="titan"
+          className={activeEl === 'titan' ? style.nav_active : ''}
+        >
           TITAN
         </a>
       </nav>

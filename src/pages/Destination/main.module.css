@@ -56,7 +56,8 @@ main {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.17em;
-  margin-bottom: 20px;
+
+  border-bottom: 3px solid white;
 }
 /* Компонент Навигации ================================================== */
 .title {

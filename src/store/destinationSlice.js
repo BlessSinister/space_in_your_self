@@ -25,3 +25,13 @@ export const destinationSlice = createSlice({
 })
 
 export const { filterDestinaton } = destinationSlice.actions
+
+export const activeDestinSlice = createSlice({
+  name: 'active',
+  initialState: 'moon',
+  reducers: {
+    setActive: (state, action) => action.payload,
+  },
+})
+
+export const { setActive } = activeDestinSlice.actions
