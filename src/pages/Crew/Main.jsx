@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './main.module.css'
-import img_dug from './image-douglas-hurley.webp'
-export default function Main({ data }) {
+
+export default function Main({ data, handleClick }) {
   console.log(data)
   if (!data) {
     return
@@ -23,7 +23,32 @@ export default function Main({ data }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="5" cy="5" r="5" fill="white" />
+          <circle
+            cx="5"
+            cy="5"
+            r="5"
+            fill="white"
+            id="commander"
+            onClick={handleClick}
+          />
+        </svg>
+
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            opacity="0.174363"
+            cx="5"
+            cy="5"
+            r="5"
+            fill="white"
+            id="mission specialist"
+            onClick={handleClick}
+          />
         </svg>
         <svg
           width="10"
@@ -32,7 +57,15 @@ export default function Main({ data }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle opacity="0.174363" cx="5" cy="5" r="5" fill="white" />
+          <circle
+            opacity="0.174363"
+            cx="5"
+            cy="5"
+            r="5"
+            fill="white"
+            id="pilot"
+            onClick={handleClick}
+          />
         </svg>
         <svg
           width="10"
@@ -41,16 +74,15 @@ export default function Main({ data }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle opacity="0.174363" cx="5" cy="5" r="5" fill="white" />
-        </svg>
-        <svg
-          width="10"
-          height="10"
-          viewBox="0 0 10 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle opacity="0.174363" cx="5" cy="5" r="5" fill="white" />
+          <circle
+            opacity="0.174363"
+            cx="5"
+            cy="5"
+            r="5"
+            fill="white"
+            id="flight engineer"
+            onClick={handleClick}
+          />
         </svg>
       </nav>
       <div className={style.blog_info_wrapper}>
