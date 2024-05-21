@@ -15,7 +15,6 @@ export const crewSlice = createSlice({
   ],
   reducers: {
     filterCrew: (state, action) => {
-      console.log(action)
       return action.payload[0].filter((item) => {
         return item.role.toLowerCase() === action.payload[1]
       })
@@ -24,3 +23,13 @@ export const crewSlice = createSlice({
 })
 
 export const { filterCrew } = crewSlice.actions
+
+export const activeCrewSlice = createSlice({
+  name: 'active',
+  initialState: 'commander',
+  reducers: {
+    setActiveCrew: (state, action) => action.payload,
+  },
+})
+
+export const { setActiveCrew } = activeCrewSlice.actions

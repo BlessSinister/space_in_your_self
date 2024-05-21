@@ -5,7 +5,7 @@ export default function Main({ data, handleClick, activeEl }) {
   if (data === undefined) {
     return
   }
-  console.log(activeEl)
+
   return (
     <main>
       <h2 className={style.subtitle}>

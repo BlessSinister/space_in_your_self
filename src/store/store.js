@@ -1,7 +1,7 @@
-import { configureStore, current } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import { dataSlice } from './dataSlice'
 import { activeDestinSlice, destinationSlice } from './destinationSlice'
-import { crewSlice } from './crewSlice'
+import { activeCrewSlice, crewSlice } from './crewSlice'
 import { techSlice } from './techSlice'
 
 export const store = configureStore({
@@ -11,6 +11,7 @@ export const store = configureStore({
     currentCrew: crewSlice.reducer,
     currentTech: techSlice.reducer,
     activeDest: activeDestinSlice.reducer,
+    activeCrew: activeCrewSlice.reducer,
   },
   devTools: true,
 })

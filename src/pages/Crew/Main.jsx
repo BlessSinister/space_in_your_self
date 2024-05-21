@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './main.module.css'
 
-export default function Main({ data, handleClick }) {
+export default function Main({ data, handleClick, activeEl }) {
   console.log(data)
   if (!data) {
     return
@@ -24,6 +24,7 @@ export default function Main({ data, handleClick }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
+            opacity={activeEl === 'commander' ? '1' : '0.174363'}
             cx="5"
             cy="5"
             r="5"
@@ -41,7 +42,7 @@ export default function Main({ data, handleClick }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
-            opacity="0.174363"
+            opacity={activeEl === 'mission specialist' ? '1' : '0.174363'}
             cx="5"
             cy="5"
             r="5"
@@ -58,7 +59,7 @@ export default function Main({ data, handleClick }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
-            opacity="0.174363"
+            opacity={activeEl === 'pilot' ? '1' : '0.174363'}
             cx="5"
             cy="5"
             r="5"
@@ -75,7 +76,7 @@ export default function Main({ data, handleClick }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
-            opacity="0.174363"
+            opacity={activeEl === 'flight engineer' ? '1' : '0.174363'}
             cx="5"
             cy="5"
             r="5"
