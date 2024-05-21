@@ -8,7 +8,9 @@ export default function Header() {
   const activeMenuFn = () => {
     setActive(!active)
   }
-  const activeMenu = active ? { display: 'block' } : { display: 'none' }
+  const activeMenu = active
+    ? { display: 'flex', justifyContent: 'flex-end' }
+    : { display: 'none' }
   const activeMenuEl = ({ isActive }) =>
     isActive ? `${style.nav_bar_link} ${style.active}` : `${style.nav_bar_link}`
 

@@ -19,16 +19,9 @@ section {
 .menu_border_decoration {
   display: none;
   position: absolute;
-  max-width: 27.4rem;
   width: 100%;
-  left: 10rem;
-  top: 0;
 }
-@media (max-width: 374px) {
-  .menu_border_decoration {
-    left: 4.6rem;
-  }
-}
+
 .menu_block {
   position: absolute;
   max-width: 27.4rem;
@@ -47,7 +40,8 @@ section {
   margin-bottom: 6.5rem;
 }
 .active {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
 }
 .nav_bar_burger {
   display: inline-flex;
