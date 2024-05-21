@@ -1,5 +1,7 @@
 .container {
   background: url('../../../public/assets/crew/background-crew-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
