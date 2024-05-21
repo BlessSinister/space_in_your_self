@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import { dataSlice } from './dataSlice'
 import { activeDestinSlice, destinationSlice } from './destinationSlice'
 import { activeCrewSlice, crewSlice } from './crewSlice'
-import { techSlice } from './techSlice'
+import { activeTechSlice, techSlice } from './techSlice'
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +12,7 @@ export const store = configureStore({
     currentTech: techSlice.reducer,
     activeDest: activeDestinSlice.reducer,
     activeCrew: activeCrewSlice.reducer,
+    activeTech: activeTechSlice.reducer,
   },
   devTools: true,
 })

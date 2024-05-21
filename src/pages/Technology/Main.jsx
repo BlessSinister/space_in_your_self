@@ -2,7 +2,7 @@ import React from 'react'
 import style from './main.module.css'
 // import img from './assets/image-launch-vehicle-landscape.jpg'
 
-export default function Main({ data, handleClick }) {
+export default function Main({ data, handleClick, activeEl }) {
   if (!data) {
     return
   }
@@ -19,7 +19,9 @@ export default function Main({ data, handleClick }) {
       <nav className={style.nav_wrapper}>
         <a
           href="#"
-          className={`${style.nav_link} ${style.active_link}`}
+          className={`${style.nav_link} ${
+            activeEl === 'launch vehicle' ? style.active_link : ''
+          }`}
           id="launch vehicle"
           onClick={handleClick}
         >
@@ -27,7 +29,9 @@ export default function Main({ data, handleClick }) {
         </a>
         <a
           href="#"
-          className={style.nav_link}
+          className={`${style.nav_link} ${
+            activeEl === 'spaceport' ? style.active_link : ''
+          }`}
           id="spaceport"
           onClick={handleClick}
         >
@@ -35,7 +39,9 @@ export default function Main({ data, handleClick }) {
         </a>
         <a
           href="#"
-          className={style.nav_link}
+          className={`${style.nav_link} ${
+            activeEl === 'space capsule' ? style.active_link : ''
+          }`}
           id="space capsule"
           onClick={handleClick}
         >

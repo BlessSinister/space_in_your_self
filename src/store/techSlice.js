@@ -16,7 +16,6 @@ export const techSlice = createSlice({
   ],
   reducers: {
     filterTech: (state, action) => {
-      console.log(action)
       return action.payload[0].filter((item) => {
         return item.name.toLowerCase() === action.payload[1]
       })
@@ -25,3 +24,13 @@ export const techSlice = createSlice({
 })
 
 export const { filterTech } = techSlice.actions
+
+export const activeTechSlice = createSlice({
+  name: 'active',
+  initialState: 'launch vehicle',
+  reducers: {
+    setActiveTech: (state, action) => action.payload,
+  },
+})
+
+export const { setActiveTech } = activeTechSlice.actions
