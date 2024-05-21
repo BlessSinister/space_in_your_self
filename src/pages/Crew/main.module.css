@@ -23,7 +23,6 @@
   font-size: 16px;
   letter-spacing: 0.17em;
   color: #fff;
-  opacity: 0.25;
 }
 .img_wrapper {
   display: flex;
@@ -55,7 +54,6 @@ nav {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  opacity: 0.5;
   margin-bottom: 8px;
 }
 .name_team {

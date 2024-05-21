@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import style from './header.module.css'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function Header() {
   const [active, setActive] = useState(false)
+
   const activeMenuFn = () => {
     setActive(!active)
   }
   const activeMenu = active ? { display: 'block' } : { display: 'none' }
+  const activeMenuEl = ({ isActive }) =>
+    isActive ? `${style.nav_bar_link} ${style.active}` : `${style.nav_bar_link}`
+
   return (
     <section>
       <header className={style.header_container}>
@@ -70,18 +74,22 @@ export default function Header() {
             />
           </svg>
           <div className={style.nav_bar_burger}>
-            <Link to="/" className={style.nav_bar_link}>
+            <NavLink to="/" className={activeMenuEl} id="home">
               <span className={style.nav_span}>00</span> HOME
-            </Link>
-            <Link to="/destination" className={style.nav_bar_link}>
+            </NavLink>
+            <NavLink
+              to="/destination"
+              id="destination"
+              className={activeMenuEl}
+            >
               <span className={style.nav_span}>01</span> DESTINATION
-            </Link>
-            <Link to="/crew" className={style.nav_bar_link}>
+            </NavLink>
+            <NavLink to="/crew" className={activeMenuEl} id="crew">
               <span className={style.nav_span}>02</span> CREW
-            </Link>
-            <Link to="/technology" className={style.nav_bar_link}>
+            </NavLink>
+            <NavLink to="/technology" className={activeMenuEl} id="technology">
               <span className={style.nav_span}>03</span> TECHNOLOGY
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

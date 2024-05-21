@@ -72,3 +72,6 @@ section {
   letter-spacing: 0.17em;
   color: #fff;
 }
+.active {
+  border-right: 4px solid white;
+}
