@@ -18,7 +18,7 @@ export const data = {
         webp: './assets/destination/image-mars.webp',
       },
       description:
-        'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!',
+        'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest.Mars is a terrestrial planet with caps of water!',
       distance: '225 mil. km',
       travel: '9 months',
     },
