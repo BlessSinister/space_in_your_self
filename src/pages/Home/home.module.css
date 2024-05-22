@@ -1,7 +1,7 @@
 .container {
   background: url('../../../public/assets/home/background-home-mobile.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
