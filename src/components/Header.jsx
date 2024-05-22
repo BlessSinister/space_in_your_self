@@ -16,6 +16,7 @@ export default function Header() {
 
   return (
     <section>
+      {/* ========================375px====================== */}
       <header className={style.header_container}>
         <Link to="/">
           <svg
@@ -47,6 +48,20 @@ export default function Header() {
           <rect y="9" width="24" height="3" fill="#D0D6F9" />
           <rect y="18" width="24" height="3" fill="#D0D6F9" />
         </svg>
+        <nav className={style.nav_container}>
+          <NavLink to="/" className={activeMenuEl}>
+            home
+          </NavLink>
+          <NavLink to="/destination" className={activeMenuEl}>
+            destination
+          </NavLink>
+          <NavLink to="/crew" className={activeMenuEl}>
+            crew
+          </NavLink>
+          <NavLink to="/technology" className={activeMenuEl}>
+            technology
+          </NavLink>
+        </nav>
       </header>
       <div className={`${style.menu_border_decoration}`} style={activeMenu}>
         <div className={style.menu_block}>
@@ -95,6 +110,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      {/* ========================end-375px====================== */}
     </section>
   )
 }
