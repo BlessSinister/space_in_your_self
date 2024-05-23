@@ -1,6 +1,5 @@
 import React from 'react'
-import style from './main.module.css'
-
+import style from './main_crew.module.css'
 export default function Main({ data, handleClick, activeEl }) {
   console.log(data)
   if (!data) {
@@ -13,7 +12,7 @@ export default function Main({ data, handleClick, activeEl }) {
         Meet your crew
       </p>
       <div className={style.img_wrapper}>
-        <img src={data[0].images.png} alt="" />
+        <img src={data[0].images.png} alt="" className={style.img_crew} />
       </div>
       <nav>
         <svg

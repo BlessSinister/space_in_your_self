@@ -52,13 +52,15 @@ export default function Main({ data, handleClick, activeEl }) {
       <h1 className={style.title}>{data[0].name.toUpperCase()}</h1>
       <p className={style.descritpion}>{data[0].description}</p>
       <div className={style.line_decoration}></div>
-      <div className={style.avg_wrapper}>
-        AVG. DISTANCE{' '}
-        <span className={style.span_decoration}>{data[0].distance}</span>
-      </div>
-      <div className={style.avg_wrapper}>
-        Est. travel time{' '}
-        <span className={style.span_decoration}>{data[0].travel}</span>
+      <div className={style.avg_container}>
+        <div className={style.avg_wrapper}>
+          AVG. DISTANCE{' '}
+          <span className={style.span_decoration}>{data[0].distance}</span>
+        </div>
+        <div className={style.avg_wrapper}>
+          Est. travel time{' '}
+          <span className={style.span_decoration}>{data[0].travel}</span>
+        </div>
       </div>
     </main>
   )
