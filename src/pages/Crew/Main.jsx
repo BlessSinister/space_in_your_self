@@ -1,7 +1,11 @@
 import React from 'react'
 import style from './main_crew.module.css'
+import { useResize } from '../../custom-hooks/use-resiz'
 export default function Main({ data, handleClick, activeEl }) {
-  console.log(data)
+  const sizeScreen = useResize()
+  const currentImg =
+    sizeScreen.width > 375 ? data[0].images.webp : data[0].images.png
+  console.log(sizeScreen.width)
   if (!data) {
     return
   }
@@ -12,7 +16,7 @@ export default function Main({ data, handleClick, activeEl }) {
         Meet your crew
       </p>
       <div className={style.img_wrapper}>
-        <img src={data[0].images.png} alt="" className={style.img_crew} />
+        <img src={currentImg} alt="" className={style.img_crew} />
       </div>
       <nav>
         <svg
