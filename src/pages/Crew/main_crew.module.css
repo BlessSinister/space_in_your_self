@@ -55,10 +55,16 @@
 @media (min-width: 765px) {
   .img_wrapper {
     order: 4;
+    max-width: 45.6rem;
   }
 }
 .img_crew {
   max-width: 17.7rem;
+}
+@media (min-width: 765px) {
+  .img_crew {
+    max-width: 45.6rem;
+  }
 }
 nav {
   display: flex;
@@ -94,7 +100,7 @@ nav {
 @media (min-width: 768px) {
   .rank_team {
     opacity: 0.5;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 .name_team {
@@ -106,6 +112,11 @@ nav {
   color: #fff;
   margin-bottom: 1.6rem;
 }
+@media (min-width: 765px) {
+  .name_team {
+    font-size: 4rem;
+  }
+}
 .about_team {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
@@ -113,4 +124,11 @@ nav {
   line-height: 167%;
   text-align: center;
   color: #d0d6f9;
+}
+@media (min-width: 765px) {
+  .about_team {
+    font-size: 1.6rem;
+    line-height: 175%;
+    margin-bottom: 4rem;
+  }
 }
