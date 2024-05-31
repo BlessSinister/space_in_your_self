@@ -1,8 +1,12 @@
 import React from 'react'
 import style from './main.module.css'
+import { useResize } from '../../custom-hooks/use-resiz'
 // import img from './assets/image-launch-vehicle-landscape.jpg'
 
 export default function Main({ data, handleClick, activeEl }) {
+  const sizeScreen = useResize()
+  const sizeScreenImg =
+    sizeScreen.width < 1440 ? data[0].images.landscape : data[0].images.portrait
   if (!data) {
     return
   }
@@ -14,7 +18,7 @@ export default function Main({ data, handleClick, activeEl }) {
         SPACE LAUNCH 101
       </p>
       <div className={style.img_wrapper}>
-        <img src={data[0].images.landscape} alt="" />
+        <img src={sizeScreenImg} alt="" />
       </div>
       <nav className={style.nav_wrapper}>
         <a

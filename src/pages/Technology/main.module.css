@@ -29,9 +29,19 @@ main {
   height: 17rem;
   margin-bottom: 3.4rem;
 }
+@media (min-width: 768px) {
+  .img_wrapper {
+    max-width: 76.8rem;
+  }
+}
 .img_wrapper > img {
   max-width: 37.6rem;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .img_wrapper > img {
+    max-width: 76.8rem;
+  }
 }
 .nav_wrapper {
   display: flex;
