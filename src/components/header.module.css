@@ -10,6 +10,11 @@ section {
     padding-top: 4rem;
   }
 }
+@media (min-width: 1140px) {
+  section {
+    padding-left: 5.5rem;
+  }
+}
 .header_container {
   display: flex;
   align-items: center;

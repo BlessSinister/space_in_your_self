@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import style from './header.module.css'
 import { NavLink, Link } from 'react-router-dom'
+import { useResize } from '../custom-hooks/use-resiz'
 
 export default function Header() {
   const [active, setActive] = useState(false)
+  const sizeScreen = useResize()
 
   const activeMenuFn = () => {
     setActive(!active)
