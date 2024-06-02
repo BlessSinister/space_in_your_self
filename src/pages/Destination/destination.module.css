@@ -14,3 +14,11 @@
     display: block;
   }
 }
+@media (min-width: 1440px) {
+  .container {
+    background: url('../../../public/assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+  }
+}
